@@ -1,0 +1,28 @@
+# System files
+.DS_Store
+
+# Object files
+*.o
+
+# Files
+#main.c
+
+# Executables
+*.out
+
+# Temp files
+*.swp
+
+# GITIGNORE
+#.gitignore
+
+# Makefile
+
+#Makefile
+
+# Text directory and files
+#test/
+#*.txt
+
+# Debug directory and files
+*.dSYM/
