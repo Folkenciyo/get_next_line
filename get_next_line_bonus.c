@@ -12,6 +12,12 @@
 
 #include "get_next_line_bonus.h"
 
+/**
+ * @brief Create a line object
+ * 
+ * @param stack => stack to be read
+ * @return char* => line read from stack
+ */
 char	*ft_create_line(char *stack)
 {
 	char	*line;
@@ -39,6 +45,12 @@ char	*ft_create_line(char *stack)
 	return (line);
 }
 
+/**
+ * @brief Update the stack after reading a line
+ * 
+ * @param stack => stack to be updated
+ * @return char* => updated stack
+ */
 char	*update_stack(char *stack)
 {
 	char	*new_stack;
@@ -67,6 +79,13 @@ char	*update_stack(char *stack)
 	return (new_stack);
 }
 
+/**
+ * @brief Join two strings and free the first one
+ * 
+ * @param stack => first string
+ * @param tmp => second string
+ * @return char* => joined string
+ */
 char	*join_and_free(char *stack, char *tmp)
 {
 	char	*aux;
@@ -83,7 +102,12 @@ char	*join_and_free(char *stack, char *tmp)
 	return (aux);
 }
 
-//ssize_t Used for a count of bytes or error indication.
+/**
+ * @brief Get the next line object
+ * 
+ * @param fd => file descriptor
+ * @return char* => line read from file descriptor
+ */
 char	*get_next_line(int fd)
 {
 	static char	*stack[FD_MAX];

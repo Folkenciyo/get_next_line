@@ -12,6 +12,12 @@
 
 #include "get_next_line.h"
 
+/**
+ * @brief Find the length of a string
+ * 
+ * @param str => string to be read
+ * @return size_t => length of the string
+ */
 size_t	ft_strlen(char *str)
 {
 	size_t	i;
@@ -22,6 +28,13 @@ size_t	ft_strlen(char *str)
 	return (i);
 }
 
+/**
+ * @brief Find the first occurence of c in str
+ * 
+ * @param str => string to be read
+ * @param c => character to be found
+ * @return char* => pointer to the first occurence of c in str
+ */
 char	*ft_strchr(const char *str, int c)
 {
 	char	*tmp;
@@ -38,6 +51,13 @@ char	*ft_strchr(const char *str, int c)
 	return (tmp);
 }
 
+/**
+ * @brief Create a line object
+ * 
+ * @param s1 => stack to be read
+ * @param s2 =>	stack to be read
+ * @return char* => line read from stack
+ */
 char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*new_str;
